@@ -713,7 +713,7 @@ MEDIA QUERIES */
 
   .nav__link:link,
   .nav__link:visited {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     display: block;
   }
 
@@ -730,6 +730,11 @@ MEDIA QUERIES */
 }
 
 @media screen and (max-width: 1000px) {
+  .nav__link:link,
+  .nav__link:visited {
+    font-size: 1.8rem;
+  }
+
   .features {
     display: grid;
     grid-template-columns: 1fr;
@@ -804,6 +809,27 @@ MEDIA QUERIES */
   .operations__content--active p {
     grid-column: 1/-1;
   }
+
+  .modal {
+    max-width: 40rem;
+  }
+
+  .modal__header {
+    font-size: 1.8rem;
+  }
+
+  .modal__form {
+    gap: 1.5rem;
+  }
+
+  .modal__form label {
+    font-size: 1.7rem;
+  }
+
+  .modal__form input {
+    font-size: 1.7rem;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -833,6 +859,28 @@ MEDIA QUERIES */
   .nav__logo {
     height: 6rem;
     padding: 2rem;
+  }
+
+  .modal {
+    max-width: 35rem;
+    width: 100%;
+  }
+
+  .modal__header {
+    font-size: 1.7rem;
+  }
+
+  .modal__form {
+    gap: 1rem;
+  }
+
+  .modal__form label {
+    font-size: 1.7rem;
+  }
+
+  .modal__form input {
+    max-width: 10rem;
+    font-size: 1.7rem;
   }
 }
 

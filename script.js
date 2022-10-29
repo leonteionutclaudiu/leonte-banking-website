@@ -51,16 +51,14 @@ btnScrollTo.addEventListener(`click`, function (e) {
 
 // 1. Add event listener to common parent element
 // 2. Determine what element originated the event
-document.querySelector(`.nav__links`).addEventListener(`click`, function (e) {
+document.querySelector('.nav__links').addEventListener('click', function (e) {
   e.preventDefault();
 
-  // Matching strategy (only when we click on links)
-  if (e.target.classList.contains(`nav__link`)) {
-    e.preventDefault();
-    const id = e.target.getAttribute(`href`);
-    document.querySelector(id).scrollIntoView({
-      behavior: `smooth`,
-    });
+  // Matching strategy
+  if (e.target.classList.contains('nav__link')) {
+    const id = e.target.getAttribute('href');
+    console.log(id);
+    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   }
 });
 
